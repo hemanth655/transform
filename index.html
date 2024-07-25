@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            color: red;
+            margin: 50px;
+            text-align: center;
+        }
+        button{
+            background-color: gray;
+            color: white;
+        }
+        img{
+            width: 200px;
+            height: 200px;
+            margin: 50px;
+            border:solid;
+            border-color: chocolate;
+            transition-duration: 2s;
+        }
+        #translate:hover~.image img{
+            transform: translate(100px,40px);
+        }
+        #rotate:hover~.image img{
+            transform: rotate(45deg);
+        }
+        #skew:hover~.image img{
+            transform: skew(30deg,45deg);
+        }
+        #scale:hover~.image img{
+            transform: scale(2,2);
+        }
+    </style>
+    </head>
+    <body>
+        <div class="container">
+            <div><h1>Transforms</h1></div>
+            <div>
+            <button id="translate">Translate</button>
+            <button id="rotate">Rotate</button>
+            <button id="skew">Skew</button>
+            <button id="scale">Scale</button>
+            <div class="image">
+                <img src="https://variety.com/wp-content/uploads/2017/09/justin_bieber.png" >
+            </div>
+            </div>
+            </div>
+        </body>
+        </html>
